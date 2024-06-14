@@ -1,6 +1,6 @@
 {
   "name": "Chetan",
-  "headerTaglineOne": "Hello 👋",
+  "headerTaglineOne": "Hello ",
   "headerTaglineTwo": "I'm Chetan Verma - curious",
   "headerTaglineThree": "designer and devloper",
   "headerTaglineFour": " based in New Delhi, India.",
@@ -17,13 +17,7 @@
       "title": "LinkedIn",
       "link": "https://www.linkedin.com/in/chetanverma7/"
     },
-    {
-      "id": "3",
-      "title": "Twitter",
-      "link": "https://twitter.com/realchetanverma"
-    },
-    { "id": "4", "title": "Blog", "link": "https://blog.chetanverma.com/" },
-    { "id": "5", "title": "Email", "link": "mailto:hello@chetanverma.com" }
+    { "id": "3", "title": "Email", "link": "mailto:hello@chetanverma.com" }
   ],
   "projects": [
     {
