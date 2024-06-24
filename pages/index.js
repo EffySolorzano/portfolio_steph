@@ -100,7 +100,7 @@ export default function Home() {
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
-                img={project.imageSrc}
+                videoSrc={project.videoSrc}
                 name={project.title}
                 description={project.description}
                 onClick={() => window.open(project.url)}
@@ -133,6 +133,9 @@ export default function Home() {
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
           <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
             {data.aboutpara}
+          </p>
+          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
+            {data.aboutpara2}
           </p>
         </div>
         <Footer />

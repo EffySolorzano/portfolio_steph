@@ -23,48 +23,39 @@
       {
         "id": "1",
         "title": "Servicio de Grúas Alamo",
-        "description": "📍 Venezuela",
-        "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        "description": "📍 Caracas",
+        "videoSrc": "https://www.dropbox.com/scl/fi/wn72masv51hgt6ldydf4b/II_gruas_Alamo.mp4?rlkey=u4lrtxlrwq2d8doldtzhx2aek&st=arecapfy&dl=1",
         "url": "https://gruas-alamo-dev.vercel.app/"
       },
       {
         "id": "2",
         "title": "David & Sons Contractors",
-        "description": "Web Development",
-        "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
+        "description": "📍 New Jersey",
+        "videoSrc": "https://www.dropbox.com/scl/fi/292pes3lkg0ao5ecwq1r7/II_david-sons.mp4?rlkey=c77dzdg6cu7egfyqtjkmsomhv&st=orsm4tor&dl=1",
         "url": "https://david-sons-contractors-nj.vercel.app/"
       },
       {
         "id": "3",
         "title": "Project Three",
         "description": "Design",
-        "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        "videoSrc": "https://www.dropbox.com/scl/fi/b81ylocd11hikwkgbwlky/Gruas_vid.mp4?rlkey=wbhui8vw04hnm51eaj00ed59m&st=lkpv9hd4&dl=1",
         "url": "http://chetanverma.com/"
       }
     ],
     "services": [
       {
         "id": "1",
-        "title": "Art Direction",
-        "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
+        "title": "Web Design",
+        "description": "Specializing in creating visually stunning and highly functional websites, the focus is on enhancing the aesthetic appeal of your online presence while ensuring a seamless and engaging user experience. From responsive design to interactive features, these websites are built to captivate visitors and drive results for your business."
       },
       {
         "id": "2",
-        "title": "Branding",
-        "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
-      },
-      {
-        "id": "3",
-        "title": "Web Design",
-        "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
-      },
-      {
-        "id": "4",
-        "title": "3D Design",
-        "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
-      }
+        "title": "Shopify Services (Coming Soon)",
+        "description": "Comprehensive services for online stores exclusively on the Shopify platform will be available soon. Whether starting a new online shop or looking to improve an existing one, the upcoming Shopify services will offer expert guidance and tailored solutions to boost e-commerce success. Stay tuned for more details as this new service is prepared to launch, designed to help businesses thrive in the digital marketplace."
+      } 
     ],
-    "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "aboutpara": "Hey there✨ I'm Stephanie! A frontend developer and illustrator dedicated to creating and designing websites that help businesses reach a wider audience.",
+    "aboutpara2": "When I'm not working, you can find me spending time with my dogs or exploring new places. Thanks for stopping by!",
     "resume": {
       "tagline": "👋  I'm a software engineer, product designer, and maker.",
       "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
