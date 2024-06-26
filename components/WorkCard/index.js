@@ -6,27 +6,27 @@ const WorkCard = ({ videoSrc, name, description, onClick }) => {
       className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link"
       onClick={onClick}
     >
-      <div
-        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto"
-        style={{ height: "650px" }}
-      >
-        {videoSrc ? (
-          <video
-            className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src={videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <div className="h-full w-full bg-gray-200 flex items-center justify-center">
-            <p>No video available</p>
-          </div>
-        )}
-      </div>
+     <div
+  className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto"
+  style={{ height: "650px" }}
+>
+  {videoSrc ? (
+    <video
+      className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
+      autoPlay
+      loop
+      muted
+      playsInline
+    >
+      <source src={videoSrc} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  ) : (
+    <div className="h-full w-full bg-gray-200 flex items-center justify-center">
+      <p>No video available</p>
+    </div>
+  )}
+</div>
       <h1 className="mt-5 text-3xl font-medium">
         {name ? name : "Project Name"}
       </h1>

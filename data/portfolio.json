@@ -33,13 +33,6 @@
         "description": "📍 New Jersey",
         "videoSrc": "https://www.dropbox.com/scl/fi/292pes3lkg0ao5ecwq1r7/II_david-sons.mp4?rlkey=c77dzdg6cu7egfyqtjkmsomhv&st=orsm4tor&dl=1",
         "url": "https://david-sons-contractors-nj.vercel.app/"
-      },
-      {
-        "id": "3",
-        "title": "Project Three",
-        "description": "Design",
-        "videoSrc": "https://www.dropbox.com/scl/fi/b81ylocd11hikwkgbwlky/Gruas_vid.mp4?rlkey=wbhui8vw04hnm51eaj00ed59m&st=lkpv9hd4&dl=1",
-        "url": "http://chetanverma.com/"
       }
     ],
     "services": [

@@ -75,3 +75,10 @@ body {
   background: inherit;
   border-radius: inherit;
 }
+
+/* Add this to your CSS */
+@media (max-width: 768px) {
+  .video-container {
+    height: auto; /* Ensure height is auto on mobile */
+  }
+}
