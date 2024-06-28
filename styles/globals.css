@@ -79,7 +79,7 @@ body {
 /* Add this to your CSS */
 @media (max-width: 768px) {
   .video-container {
-    height: auto; 
+    height: 650px; 
   }
 }
 
