@@ -76,10 +76,14 @@ body {
   border-radius: inherit;
 }
 
-/* Add this to your CSS */
+
+.video-container {
+  height: 650px; /* Fixed height for consistency */
+}
+
 @media (max-width: 768px) {
   .video-container {
-    height: 650px; 
+    height: 400px; /* Adjust height for mobile, if necessary */
   }
 }
 
