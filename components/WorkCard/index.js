@@ -8,7 +8,7 @@ const WorkCard = ({ videoSrc, name, description, onClick }) => {
     >
       <div
         className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto video-container"
-        style={{ height: "650px" }}
+        style={{ height: "auto" }}
       >
         {videoSrc ? (
           <video
