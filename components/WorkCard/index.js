@@ -3,7 +3,7 @@ import React from 'react';
 const WorkCard = ({ videoSrc, name, description, onClick }) => {
   return (
     <div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link" onClick={onClick}>
-      <div className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 video-container" style={{ height: "650px" }}>
+      <div className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 video-container">
         {videoSrc ? (
           <video
             className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
