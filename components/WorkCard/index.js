@@ -6,7 +6,7 @@ const WorkCard = ({ videoSrc, name, description, onClick }) => {
       <div className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 video-container">
         {videoSrc ? (
           <video
-            className="video-element"
+            className="video-element h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
             autoPlay
             loop
             muted
