@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 768px) {
   .video-container {
-    height: 400px; /* Adjust height for mobile, if necessary */
+    height: 450px !important; /* Adjust height for mobile, if necessary */
   }
 }
 
