@@ -76,14 +76,20 @@ body {
   border-radius: inherit;
 }
 
-
 .video-container {
   height: 650px; /* Fixed height for consistency */
+  width: 100%;
+}
+
+.video-element {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the video covers the container without distortion */
 }
 
 @media (max-width: 768px) {
   .video-container {
-    height: 450px !important; /* Adjust height for mobile, if necessary */
+    height: 250px; /* Adjust height for mobile, if necessary */
   }
 }
 
