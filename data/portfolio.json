@@ -24,14 +24,14 @@
         "id": "1",
         "title": "Servicio de Grúas Alamo",
         "description": "📍 Caracas",
-        "videoSrc": "https://www.dropbox.com/scl/fi/wn72masv51hgt6ldydf4b/II_gruas_Alamo.mp4?rlkey=u4lrtxlrwq2d8doldtzhx2aek&st=arecapfy&dl=1",
+        "videoSrc": "https://myportfoliovideossteph.s3.amazonaws.com/II_gruas_Alamo.mp4",
         "url": "https://gruas-alamo-dev.vercel.app/"
       },
       {
         "id": "2",
         "title": "David & Sons Contractors",
         "description": "📍 New Jersey",
-        "videoSrc": "https://www.dropbox.com/scl/fi/292pes3lkg0ao5ecwq1r7/II_david-sons.mp4?rlkey=c77dzdg6cu7egfyqtjkmsomhv&st=orsm4tor&dl=1",
+        "videoSrc": "https://myportfoliovideossteph.s3.amazonaws.com/II_david%26sons.mp4",
         "url": "https://david-sons-contractors-nj.vercel.app/"
       }
     ],
