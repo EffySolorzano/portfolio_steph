@@ -6,7 +6,7 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll, openModal }) => { // Receive openModal as prop
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -71,20 +71,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                 <Button onClick={handleWorkScroll}>Work</Button>
                 <Button onClick={handleAboutScroll}>About</Button>
                 {showResume && (
-                  <Button
-                    onClick={() =>
-                      window.open("mailto:hello@chetanverma.com")
-                    }
-                  >
+                  <Button onClick={() => router.push("/resume")}>
                     Resume
                   </Button>
                 )}
-
-                <Button
-                  onClick={() => window.open("mailto:hello@chetanverma.com")}
-                >
-                  Contact
-                </Button>
+                <Button onClick={openModal}>Contact</Button> {/* Update button */}
               </div>
             </Popover.Panel>
           </>
@@ -105,21 +96,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
           <Button onClick={handleWorkScroll}>Work</Button>
           <Button onClick={handleAboutScroll}>About</Button>
           {showResume && (
-            <Button
-              onClick={() => router.push("/resume")}
-              classes="first:ml-1"
-            >
+            <Button onClick={() => router.push("/resume")} classes="first:ml-1">
               Resume
             </Button>
           )}
-
-          <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-            Contact
-          </Button>
+          <Button onClick={openModal}>Contact</Button> {/* Update button */}
           {mounted && theme && data.darkMode && (
-            <Button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
+            <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
               <img
                 className="h-6"
                 src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}

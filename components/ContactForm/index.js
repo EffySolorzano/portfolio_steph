@@ -50,6 +50,7 @@ const ContactForm = ({ onClose }) => {
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white p-8 rounded-lg max-w-lg w-full relative overflow-hidden">
         <div className="gradient-circle absolute top-0 left-0 w-full h-24 z-0"></div>
+        <div className="gradient-circle-bottom absolute bottom-0 left-0 w-full h-24 z-0"></div>
         <button
           className="absolute top-2 right-2 text-gray-700 z-10"
           onClick={onClose}
@@ -66,7 +67,7 @@ const ContactForm = ({ onClose }) => {
               Name
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white"
               id="name"
               type="text"
               name="name"
@@ -81,7 +82,7 @@ const ContactForm = ({ onClose }) => {
               Email
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white"
               id="email"
               type="email"
               name="email"
@@ -96,7 +97,7 @@ const ContactForm = ({ onClose }) => {
               Message
             </label>
             <textarea
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white"
               id="message"
               name="message"
               value={formData.message}
@@ -105,14 +106,15 @@ const ContactForm = ({ onClose }) => {
               required
             />
           </div>
-          <div className="flex items-center justify-center">
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              Done!
-            </button>
-           
+          <div className="relative">
+            <div className="flex items-center justify-center relative z-10 mb-2">
+              <button
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Done!
+              </button>
+            </div>
           </div>
         </form>
       </div>

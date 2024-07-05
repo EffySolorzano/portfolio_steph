@@ -75,6 +75,7 @@ export default function Home() {
         <Header
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
+          openModal={openModal} 
         />
         <div className="laptop:mt-20 mt-10">
           <div className="mt-5">
