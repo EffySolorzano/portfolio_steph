@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const ContactForm = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -33,22 +34,33 @@ const ContactForm = ({ onClose }) => {
     form.submit();
     document.body.removeChild(form);
 
-    alert('Message sent successfully!');
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Message sent successfully!",
+      showConfirmButton: false,
+      timer: 1500
+    });
+
     setFormData({ name: '', email: '', message: '' });
     onClose();
   };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white p-8 rounded-lg max-w-lg w-full relative">
+      <div className="bg-white p-8 rounded-lg max-w-lg w-full relative overflow-hidden">
+        <div className="gradient-circle absolute top-0 left-0 w-full h-24 z-0"></div>
         <button
-          className="absolute top-2 right-2 text-gray-700"
+          className="absolute top-2 right-2 text-gray-700 z-10"
           onClick={onClose}
         >
           &times;
         </button>
-        <h2 className="text-2xl mb-4">Contact Me</h2>
-        <form onSubmit={handleSubmit}>
+        <div className="relative z-10">
+          <img src="/totoro.png" alt="Contact Form Image" className="mx-auto mb-4 w-20 h-20" />
+          <h1 className="text-center text-gray-700 text-2xl mb-4">Let's talk</h1> 
+        </div>
+        <form onSubmit={handleSubmit} className="relative z-10">
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
               Name
@@ -93,13 +105,14 @@ const ContactForm = ({ onClose }) => {
               required
             />
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Send
+              Done!
             </button>
+           
           </div>
         </form>
       </div>

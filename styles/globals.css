@@ -77,7 +77,8 @@ body {
 }
 
 .video-container {
-  height: 650px; /* Fixed height for consistency */
+  height: 650px; 
+  box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.3);
  
 }
 
