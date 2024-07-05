@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -10,6 +10,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import ContactForm from "../components/ContactForm";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -22,6 +23,9 @@ export default function Home() {
   const textTwo = useRef();
   const textThree = useRef();
   const textFour = useRef();
+
+   // Modal state
+   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -38,6 +42,15 @@ export default function Home() {
       left: 0,
       behavior: "smooth",
     });
+  };
+
+   // Modal handlers
+   const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   useIsomorphicLayoutEffect(() => {
@@ -138,8 +151,13 @@ export default function Home() {
             {data.aboutpara2}
           </p>
         </div>
-        <Footer />
+        <Footer
+          isModalOpen={isModalOpen}
+          openModal={openModal}
+          closeModal={closeModal}
+        />
       </div>
+      {isModalOpen && <ContactForm onClose={closeModal} />}
     </div>
   );
 }
