@@ -59,7 +59,7 @@ const ContactForm = ({ onClose }) => {
         </button>
         <div className="relative z-10">
           <img src="/totoro.png" alt="Contact Form Image" className="mx-auto mb-4 w-20 h-20" />
-          <h1 className="text-center text-gray-700 text-2xl mb-4">Let's talk</h1> 
+          <h1 className="text-center text-gray-700 text-2xl mb-4">Let&apos;s talk</h1> 
         </div>
         <form onSubmit={handleSubmit} className="relative z-10">
           <div className="mb-4">
