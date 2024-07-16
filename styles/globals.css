@@ -83,4 +83,9 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  .video-container {
+    height: 40vh; /* Adjust height for mobile devices */
+  }
 
+}
